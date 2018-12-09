@@ -27,7 +27,7 @@ RUN wget https://github.com/nest/nest-simulator/releases/download/v2.12.0/nest-2
         -Dwith-libneurosim:BOOL=$WITH_LIBNEUROSIM /usr/local/lib \
         -Dwith-music=$WITH_MUSIC /usr/local/lib \
         /home/nest/nest-2.12.0 && \
-    make && make install
+    make -j 8 && make install
 
 # RUN su nest -c 'make installcheck'
 
