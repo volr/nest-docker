@@ -1,4 +1,4 @@
-FROM nest/docker-master:latest
+FROM volr/docker-nest-master:latest
 
 MAINTAINER "Steffen Graber" <s.graber@fz-juelich.de>
 
