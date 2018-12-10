@@ -2,10 +2,10 @@ FROM volr/docker-nest-master:latest
 
 MAINTAINER "Steffen Graber" <s.graber@fz-juelich.de>
 
-ARG WITH_MPI
-ARG WITH_GSL
-ARG WITH_MUSIC
-ARG WITH_LIBNEUROSIM
+ARG WITH_MPI=1
+ARG WITH_GSL=1
+ARG WITH_MUSIC=1
+ARG WITH_LIBNEUROSIM=1
 
 # add user 'nest'
 RUN adduser --disabled-login --gecos 'NEST' --home /home/nest nest && \
